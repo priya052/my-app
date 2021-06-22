@@ -1,2 +1,8 @@
 node{
+   stage('SCM Checkout'){
+      git 'https://github.com/priya052/my-app'
+   }
+   stage('Compile-Package'){
+     sh 'mvn package'
+   }
 }
